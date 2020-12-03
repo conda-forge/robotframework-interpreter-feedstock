@@ -5,11 +5,11 @@ Home: https://github.com/jupyter-xeus/robotframework-interpreter
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/robotframework-interpreter-feedstock/blob/master/LICENSE.txt)
 
 Summary: Utility functions for building a Robot Framework interpreter
 
-
+Development: https://github.com/jupyter-xeus/robotframework-interpreter
 
 Current build status
 ====================

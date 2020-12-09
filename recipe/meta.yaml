@@ -1,5 +1,5 @@
 {% set name = "robotframework-interpreter" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aeab920f4be8e009ca2c3bb81f9ca56f50733b493d372d18f01bb64fcf0cab22
+  sha256: 24ec7020876b4dbda03924cd6dea3bd8d088e20cfbe05102722adde53f7a208c
 
 build:
   number: 0
@@ -20,9 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - robotframework >=3.2
+    - robotframework >=3.2,<4
     - lunr
-    - nbformat >=4.4
+    - pillow
+    - pygments
 
 test:
   imports:

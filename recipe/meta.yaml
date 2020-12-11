@@ -1,5 +1,5 @@
 {% set name = "robotframework-interpreter" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ad028961a43f487f0d246f449da2a9654546605139989030fc92237bae75997b
+  sha256: 5f082aa5987117a3b53fec716d5aa93276f3ac47c4028ec51be726f223c6fbb9
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - lunr
     - pillow
     - pygments
+    - ipywidgets
 
 test:
   imports:

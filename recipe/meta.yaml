@@ -1,5 +1,5 @@
 {% set name = "robotframework-interpreter" %}
-{% set version = "0.6.8" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2271c1c9b415e26f4a5b9c25c88e4c6a9b8b5f0cd6ae94a557bdb3ec80b9eca7
+  sha256: 11f1ec2c6b5c0aca923815aa92748e43da5bf0682aab465c3a87c6ae4b17201c
 
 build:
   number: 0

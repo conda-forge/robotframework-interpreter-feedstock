@@ -1,5 +1,5 @@
 {% set name = "robotframework-interpreter" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/robotframework-interpreter/archive/{{ version }}.tar.gz
-  sha256: a2c26c7c80db9f984124eaf6d0c7a32ee0c00c3fa072cba47bc9bd616efe19df
+  sha256: 1a3c0baa04e7dbc8720a581adf4a05e367cc2c6a1dd36db12ed166bc43010fd1
 
 build:
   number: 0

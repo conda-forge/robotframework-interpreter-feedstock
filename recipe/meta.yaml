@@ -1,13 +1,13 @@
 {% set name = "robotframework-interpreter" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3dfba9bd3053b1d168e1221b8759c5013cdd20d625eb431c1971416e0a682770
+  url: https://github.com/jupyter-xeus/robotframework-interpreter/archive/{{ version }}.tar.gz
+  sha256: a2c26c7c80db9f984124eaf6d0c7a32ee0c00c3fa072cba47bc9bd616efe19df
 
 build:
   number: 0

@@ -10,16 +10,16 @@ source:
   sha256: d8bae4c670c9c0c1c7202d159afa5fe092f06e27d932aae1a337bbb53305fbf0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6,<3.10
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6,<3.10
+    - python >={{ python_min }},<3.10
     - robotframework >=3.2,<5
     - lunr
     - pillow
@@ -27,6 +27,8 @@ requirements:
     - ipywidgets
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - robotframework_interpreter
 
